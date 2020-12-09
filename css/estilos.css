@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer{
+    background-color: black;
+}
+.logo2 .img1{
+    width: 64px;
+    height: 100%;
+    border-right: thick solid white;
+    border-width: 1px;
+}
+.logo2 .img2{
+    width: 64px;
+    height: 100%;
+    border-right: thick solid white;
+    border-width: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.logo2 .img2:hover{
+    width: 65px;
+}
+.logo2 .img1:hover{
+    width: 65px;
+}
+.back{
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flexbox;
+    justify-content: center;
+    
+}
+.back img{
+    width: 100%;
+    height: 100%;
+}
+.back .text{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    align-items: center;
+    
+}
+.back .text h1{
+    font-family: 'Premier League';
+    font-size: 90px;
+    color: saddlebrown;
+    text-align: center;
+    margin-top: 15%;
+    /*-webkit-text-stroke: 2px black;*/
+}
+.back .text3{
+    width: 100%;
+    height: 100%;
+    top: 60%;
+    left: 0px;
+    position: absolute;
+    align-items: center;
+}
+.back .text3 a{
+    font-family: 'Premier League' ;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 12%;
+    margin-left: 47vw;
+    background-color: darkseagreen;
+    text-decoration: none;
+    padding: 7px;
+}
+.back .text2{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    align-items: center;
+    position: absolute;
+    
+}
+.back .text2 h2{
+    font-family: 'Premier League' ;
+    font-size: 30px;
+    color: rgb(243, 185, 78);
+    text-align: center;
+    margin-top: 12%;
+}
+.back .text3 a:hover{
+    background-color: dimgrey;
+}
+header{
+    height: 60px;
+    background: rgb(113, 142, 172);
+    display: flex;
+    padding: 0 20px;
+}
+footer{
+    top: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    
+}
+.foot{
+    width: 100%;
+    height: 200px;
+    background: rgb(24, 24, 24);
+}
+.menu-toggle{
+    display: none;
+    color: white;
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo a{
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#menu{
+    z-index: 2;
+    margin-left: 10px;
+
+}
+#menu ul li{
+    display: inline-block;
+
+}
+#menu ul li a{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+#menu ul li a:hover{
+    background: rgb(243, 185, 78);
+}
+.show{
+    height: 305px !important;
+}
+/*medidas query*/
+@media screen and (max-width: 850px){
+    .back .text h1{
+        font-size: 30px;
+    }
+    .back .text3 a{
+        margin-left: 40vw;
+        font-size: 20px;
+    }
+    .back .text2 h2{
+        font-size: 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    #menu{
+        background: rgb(113, 142, 172);
+        position: relative;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        border: 1px solid whitesmoke;
+        overflow: hidden;
+        transition: .3s ease-out;
+
+    }
+    #menu ul li{
+        display: block;
+        text-align: center;
+    }
+    #menu ul li a{
+        color: white;
+        font-size: 20px;
+        border-bottom: 1px solid wheat;
+
+    }
+    #menu ul li a:hover{
+        background: rgb(243, 185, 78);
+    }
+}
